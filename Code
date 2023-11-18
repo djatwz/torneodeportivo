@@ -1,0 +1,26 @@
+> // Consultar todos los deportistas
+> db.deportistas.find();
+{ "_id" : ObjectId("6558337864e722f2bb3dbee8"), "nombre" : "Lionel Messi", "edad" : 36, "equipo" : "Argentina", "posicion" : "Delantero" }
+{ "_id" : ObjectId("65583c7bd289687c51f7b26e"), "nombre" : "Cristiano Ronaldo", "edad" : 38, "equipo" : "Al-Nassr", "posicion" : "Delantero" }
+{ "_id" : ObjectId("65583c7bd289687c51f7b26f"), "nombre" : "Lucho Díaz", "edad" : 26, "equipo" : "LiverPool", "posicion" : "Delantero" }
+>
+> // Consultar todos los equipos
+> db.equipos.find();
+{ "_id" : ObjectId("6558337864e722f2bb3dbee9"), "nombre" : "Argentina", "entrenador" : "Lionel Scaloni", "grupo" : "Grupo C" }
+>
+> // Consultar todos los árbitros
+> db.arbitros.find();
+{ "_id" : ObjectId("6558337864e722f2bb3dbeea"), "nombre" : "Andrés Merlos", "nivel" : "Internacional", "pais" : "Argentina" }
+>
+> // Consultar todos los encuentros deportivos
+> db.encuentros.find();
+{ "_id" : ObjectId("655835fe64e722f2bb3dbeef"), "equipo_local" : "Equipo local", "equipo_visitante" : "Equipo visitante", "fecha" : ISODate("2023-01-01T18:00:00Z"), "arbitro" : undefined, "resultado" : { "goles_local" : 2, "goles_visitante" : 1 } }
+>
+> // Consultar todos los resultados
+> db.resultados.find();
+{ "_id" : ObjectId("6558359064e722f2bb3dbeee"), "encuentro" : undefined, "goles_local" : 5, "goles_visitante" : 3 }
+>
+> // Consultar todas las posiciones
+> db.posiciones.find();
+{ "_id" : ObjectId("6558337a64e722f2bb3dbeeb"), "equipo" : "Argentina", "puntos" : 3, "goles_favor" : 5, "goles_contra" : 3 }
+>
